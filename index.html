@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pure Style</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="nav-bar">
+    <h1>Pure Style</h1>
+    <nav>
+      <div id="cart">
+        Carrinho: <span id="cart-count">0</span>
+        <button class="carrinho-botao" onclick="checkout()">🛒 Carrinho</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products" id="products">
+      <div class="product">
+        <img class="img-product" src="images/blazer.jpg" alt="Produto 1">
+        <h2>Blazer Branco</h2>
+        <p>Preço: R$170</p>
+        <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/vestido-rosa.jpg" alt="Produto 2">
+        <h2>Vestido Rosa</h2>
+        <p>Preço: R$129</p>
+        <button onclick="addToCart('Produto 2', 15)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/blazer-cinza.jpg" alt="Produto 3">
+        <h2>Blazer Cinza</h2>
+        <p>Preço: R$196</p>
+        <button onclick="addToCart('Produto 3', 90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/blazer-rosa.jpg" alt="Produto 4">
+        <h2>Blazer Rosa</h2>
+        <p>Preço: R$200</p>
+        <button onclick="addToCart('Produto 4', 15)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 5">
+        <h2>Vestido Branco</h2>
+        <p>Preço: R$160</p>
+        <button onclick="addToCart('Produto 5', 15)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/macacao-listrado.jpg" alt="Produto 6">
+        <h2>Macacão Branco</h2>
+        <p>Preço: R$99</p>
+        <button onclick="addToCart('Produto 6', 15)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 7">
+        <h2>Vestido Branco</h2>
+        <p>Preço: R$160</p>
+        <button onclick="addToCart('Produto 7', 15)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/vestido-rosa.jpg" alt="Produto 8">
+        <h2>Vestido Rosa</h2>
+        <p>Preço: R$200</p>
+        <button onclick="addToCart('Produto 8', 15)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 9">
+        <h2>Vestido Branco</h2>
+        <p>Preço: R$160</p>
+        <button onclick="addToCart('Produto 9', 15)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 10">
+        <h2>Vestido Branco</h2>
+        <p>Preço: R$160</p>
+        <button onclick="addToCart('Produto 10', 15)">Adicionar ao Carrinho</button>
+      </div>
+    </section>
+
+  </main>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Carrinho</h2>
+      <ul class="lista-modal" id="modal-items">
+        <!-- Resumo da compra será exibido aqui -->
+      </ul>
+      <ul id="cart-items">
+        <!-- Itens do carrinho serão exibidos aqui -->
+      </ul>
+      <h3 id="modal-total">Total: R$0.00</h3>
+      <button class="botao-fin">Finalizar Compra</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
