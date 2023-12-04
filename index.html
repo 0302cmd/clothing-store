@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="images/icon-pag.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <title>Pure Style</title>
+  <link href="fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -11,9 +16,18 @@
   <header class="nav-bar">
     <h1>Pure Style</h1>
     <nav>
-      <div id="cart">
-        Carrinho: <span id="cart-count">0</span> Itens.
-        <button class="carrinho-botao" onclick="checkout()">🛒 Carrinho</button>
+      <div class="button-container">
+        <div id="cart">
+          <button class="carrinho-botao" onclick="checkout()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+        <div id="user">
+          <button class="user-botao" onclick="">
+            <i class="fa-regular fa-user"></i>
+          </button>
+        </div>
       </div>
     </nav>
   </header>
@@ -23,62 +37,80 @@
       <div class="product">
         <img class="img-product" src="images/blazer.jpg" alt="Produto 1">
         <h2>Blazer Branco</h2>
-        <p>Preço: R$170</p>
-        <button onclick="addToCart('Blazer Branco', 170)">Adicionar ao Carrinho</button>
+        <p>R$170</p>
+        <button onclick="addToCart('Blazer Branco', 170)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
+
       <div class="product">
         <img class="img-product" src="images/vestido-rosa.jpg" alt="Produto 2">
         <h2>Vestido Rosa</h2>
-        <p>Preço: R$129</p>
-        <button onclick="addToCart('Vestido Rosa', 129)">Adicionar ao Carrinho</button>
+        <p>R$129</p>
+        <button onclick="addToCart('Vestido Rosa', 129)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
+
       <div class="product">
         <img class="img-product" src="images/blazer-cinza.jpg" alt="Produto 3">
         <h2>Blazer Cinza</h2>
-        <p>Preço: R$196</p>
-        <button onclick="addToCart('Blazer Cinza', 196)">Adicionar ao Carrinho</button>
+        <p>R$196</p>
+        <button onclick="addToCart('Blazer Cinza', 196)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
+
       <div class="product">
         <img class="img-product" src="images/blazer-rosa.jpg" alt="Produto 4">
         <h2>Blazer Rosa</h2>
-        <p>Preço: R$200</p>
-        <button onclick="addToCart('Blazer Rosa', 200)">Adicionar ao Carrinho</button>
+        <p>R$200</p>
+        <button onclick="addToCart('Blazer Rosa', 200)">
+          <i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
+
       <div class="product">
         <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 5">
         <h2>Vestido Branco</h2>
-        <p>Preço: R$160</p>
-        <button onclick="addToCart('Vestido Branco', 160)">Adicionar ao Carrinho</button>
+        <p>R$160</p>
+        <button onclick="addToCart('Vestido Branco', 160)">
+          <i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
+
       <div class="product">
         <img class="img-product" src="images/macacao-listrado.jpg" alt="Produto 6">
         <h2>Macacão Branco</h2>
-        <p>Preço: R$99</p>
-        <button onclick="addToCart('Macacão Branco', 99)">Adicionar ao Carrinho</button>
+        <p>R$99</p>
+        <button onclick="addToCart('Macacão Branco', 99)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
+
       <div class="product">
         <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 7">
         <h2>Vestido Branco</h2>
-        <p>Preço: R$160</p>
-        <button onclick="addToCart('Vestido Branco', 160)">Adicionar ao Carrinho</button>
+        <p>R$160</p>
+        <button onclick="addToCart('Vestido Branco', 160)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
       <div class="product">
         <img class="img-product" src="images/vestido-rosa.jpg" alt="Produto 8">
         <h2>Vestido Rosa</h2>
-        <p>Preço: R$200</p>
-        <button onclick="addToCart('Vestido Rosa', 200)">Adicionar ao Carrinho</button>
+        <p>R$200</p>
+        <button onclick="addToCart('Vestido Rosa', 200)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
       <div class="product">
         <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 9">
         <h2>Vestido Branco</h2>
-        <p>Preço: R$160</p>
-        <button onclick="addToCart('Vestido Branco', 160)">Adicionar ao Carrinho</button>
+        <p>R$160</p>
+        <button onclick="addToCart('Vestido Branco', 160)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
       <div class="product">
         <img class="img-product" src="images/vestido-ofwhite.jpg" alt="Produto 10">
         <h2>Vestido Branco</h2>
-        <p>Preço: R$160</p>
-        <button onclick="addToCart('Vestido Branco', 160)">Adicionar ao Carrinho</button>
+        <p>R$160</p>
+        <button onclick="addToCart('Vestido Branco', 160)"><i class="fa-solid fa-bag-shopping"></i>
+          Adicionar ao Carrinho</button>
       </div>
     </section>
 
@@ -86,14 +118,16 @@
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
-      <h2>Carrinho</h2>
+      <h2>Meu Carrinho</h2>
       <ul class="lista-modal" id="modal-items">
         <!-- Resumo da compra será exibido aqui -->
       </ul>
       <ul id="cart-items">
         <!-- Itens do carrinho serão exibidos aqui -->
       </ul>
-      <h3 id="modal-total">Total: R$0.00</h3>
+      <h3 id="modal-total">
+        Total:<p>R$0.00</p>
+      </h3>
       <button class="botao-fin">Finalizar Compra</button>
     </div>
 
