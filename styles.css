@@ -225,3 +225,67 @@ main {
   font: weight 600px;
   margin-left: 10px;
 }
+
+/* Estilos anteriores... */
+
+/* Modificações para responsividade */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    margin-top: 0px;
+    font-size: 16px; /* Tamanho da fonte reduzido para telas menores */
+    margin-left: 10px; /* Ajuste de margem menor para telas menores */
+  }
+
+  .products {
+    padding: 1.5rem; /* Espaço lateral menor para os cards */
+  }
+
+  .product {
+    width: 100%; /* Cards ocupam toda a largura disponível */
+    max-width: 300px; /* Define a largura máxima para evitar esticamento excessivo */
+  }
+
+  .product img {
+    width: 100%; /* Imagens ocupam toda a largura do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+  }
+
+  .product button {
+    font-size: 14px; /* Tamanho de fonte um pouco maior para melhor legibilidade */
+  }
+
+  /* Estilos anteriores... */
+
+  header {
+    top: 0;
+    padding: 0px 20px; /* Reduzir o padding do header */
+    position: fixed; /* Fixa o header na parte superior da tela */
+    width: 100%; /* Largura total da tela */
+    z-index: 1000; /* Define a ordem de empilhamento para garantir que fique acima dos outros elementos */
+    height: 40px;
+  }
+
+  /* Aumentando a largura do header */
+  header {
+    padding: 15px 20px; /* Espaçamento interno para o conteúdo do header */
+  }
+  /* Reduzir o espaçamento e tamanho dos botões na barra de navegação */
+  .carrinho-botao {
+    margin: 0px 15px; /* Diminuir as margens entre os botões */
+    padding: 8px 12px; /* Diminuir o preenchimento dentro dos botões */
+    font-size: 18px; /* Reduzir o tamanho da fonte dos ícones */
+  }
+
+  .user-botao {
+    margin: 0px 0px; /* Diminuir as margens entre os botões */
+    padding: 8px 12px; /* Diminuir o preenchimento dentro dos botões */
+  }
+
+  .user-botao i {
+    font-size: 17px; /* Reduzir o tamanho da fonte dos ícones */
+  }
+
+  .modal-content {
+    margin-top: 20%;
+  }
+}
