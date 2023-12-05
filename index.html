@@ -6,8 +6,9 @@
   <link rel="shortcut icon" href="images/icon-pag.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Overpass:wght@600&family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <title>Pure Style</title>
   <link href="fontawesome/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -36,7 +37,9 @@
   <main>
     <section class="products" id="products">
       <div class="product">
-        <img class="img-product" src="images/blazer.jpg" alt="Produto 1">
+        <div class="img-container">
+          <img class="img-product" src="images/blazer.jpg" alt="Produto 1">
+        </div>
         <h2>Blazer Branco</h2>
         <p>R$170</p>
         <button onclick="addToCart('Blazer Branco', 170)"><i class="fa-solid fa-bag-shopping"></i>
@@ -44,7 +47,9 @@
       </div>
 
       <div class="product">
-        <img class="img-product" src="images/vestido-rosa.jpg" alt="Produto 2">
+        <div class="img-container">
+          <img class="img-product" src="images/vestido-rosa.jpg" alt="Produto 2">
+        </div>
         <h2>Vestido Rosa</h2>
         <p>R$129</p>
         <button onclick="addToCart('Vestido Rosa', 129)"><i class="fa-solid fa-bag-shopping"></i>
